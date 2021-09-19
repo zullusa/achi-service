@@ -35,7 +35,7 @@ sudo systemctl enable achi
 sudo service achi start
 ```
 
-#FAQ
+# FAQ
 ### How to see log `achi_plot`
 ```
 tail -f /var/log/achi/log.log
