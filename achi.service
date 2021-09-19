@@ -1,0 +1,11 @@
+[Unit]
+Description=Achi Farm Service
+
+[Service]
+Type=simple
+ExecStart=<PATH_TO>/achi-blockchain/start.ext.sh
+Restart=always
+WorkingDirectory=<PATH_TO>/achi-blockchain/
+
+[Install]
+WantedBy=multi-user.target
