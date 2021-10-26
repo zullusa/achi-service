@@ -1,4 +1,6 @@
 # achi-service
+Use this for automate plotting achi. It can calculate free space to populate plots to disks registered via `achi plots add -d`
+
 
 1. Open new terminal
 ```
