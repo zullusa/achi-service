@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 farmer_key=""
 pool_key=""
@@ -12,9 +12,9 @@ do
     if [ $count -gt 0 ]; then
         rm -f /mnt/<ssd2>/*
         rm -f /mnt/<ram>/*
-        fstrim -v /mnt/ssd2
+        #fstrim -v /mnt/<ssd2>
 
-        achi_plot -r 32 -t /mnt/ssd2/ -2 /mnt/ram/ -d "$var" -n $count -p $pool_key -f $farmer_key
+        achi_plot -r 32 -t /mnt/<ssd2>/ -2 /mnt/<ram>/ -d "$var" -n $count -p $pool_key -f $farmer_key
 
         chown -R <$USER>:<$USER> "$var"*.plot
         chmod 444 "$var"*
